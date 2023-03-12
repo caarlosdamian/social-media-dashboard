@@ -1,0 +1,109 @@
+// primary
+$lime-green: hsl(163, 72%, 41%);
+$bright-red: hsl(356, 69%, 56%);
+$white: hsl(0, 0%, 100%); //(Text)
+$facebook: hsl(208, 92%, 53%);
+$twitter: hsl(203, 89%, 53%);
+$instagram: linear gradient hsl(37, 97%, 70%) to hsl(329, 70%, 58%);
+$youTube: hsl(348, 97%, 39%);
+
+// Generic
+$very-dark-blue: hsl(230, 17%, 14%); //(Text)
+
+// #### Dark Theme
+
+$toggle-dark: linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%);
+
+// #### Light Theme
+
+$toggle-light: hsl(230, 22%, 74%);
+
+// #### Dark Theme
+$very-dark-lue-top: hsl(232, 19%, 15%);
+$dark-desaturated-blue: hsl(228, 28%, 20%); //(Card BG)
+$desaturated-blue: hsl(228, 34%, 66%); // (Text)
+
+// #### Light Theme
+
+$very-pale-blue: hsl(225, 100%, 98%); //(Top BG Pattern)
+$light-grayish-blue: hsl(227, 47%, 96%); // (Card BG)
+$dark-grayish-blue: hsl(228, 12%, 44%); //(Text)
+
+$font-family: 'Inter', sans-serif;
+$font-style: normal;
+
+$font-weight-700: 700;
+$font-weight-500: 500;
+$font-weight-400: 400;
+$font-weight-300: 300;
+
+$font-size-88: 5.5rem;
+$font-size-48: 3rem;
+$font-size-40: 2.5rem;
+$font-size-32: 2rem;
+$font-size-24: 1.5rem;
+$font-size-20: 1.25rem;
+$font-size-18: 1.125rem;
+$font-size-16: 1rem;
+$font-size-14: 0.875rem;
+$font-size-12: 0.75rem;
+$font-size-11: 0.688rem;
+
+$line-height-88: 5.5rem;
+$line-height-56: 3.5rem;
+$line-height-48: 3rem;
+$line-height-38: 2.375rem;
+$line-height-36: 2.25rem;
+$line-height-32: 2rem;
+$line-height-28: 1.75rem;
+$line-height-26: 1.625rem;
+$line-height-24: 1.5rem;
+$line-height-22: 1.375rem;
+$line-height-20: 1.25rem;
+$line-height-18: 1.125rem;
+$line-height-15: 0.938rem;
+
+$letter-spacing-25: -0.016rem;
+$letter-spacing-625: -0.039rem;
+$letter-spacing-1: -0.063rem;
+$letter-spacing-8: -0.05rem;
+$letter-spacing-416667: -0.025rem;
+$letter-spacing-3125: -0.02rem;
+$letter-spacing-229167: -0.014rem;
+$letter-spacing-1-5: -0.094rem;
+
+$padding-spaicing-355: 22.188rem;
+$padding-spaicing-79: 4.938rem;
+$padding-spaicing-64: 4rem;
+$padding-spaicing-56: 2.5rem;
+$padding-spaicing-48: 3rem;
+$padding-spaicing-42: 2.625rem;
+$padding-spaicing-40: 2.5rem;
+$padding-spaicing-32: 2rem;
+$padding-spaicing-28: 1.75rem;
+$padding-spaicing-24: 1.5rem;
+$padding-spaicing-20: 1.25rem;
+$padding-spaicing-18: 1.125rem;
+$padding-spaicing-16: 1rem;
+
+// spacing
+$spacing-4: 0.25rem;
+$spacing-6: 0.375rem;
+$spacing-8: 0.5rem;
+$spacing-12: 0.75rem;
+$spacing-16: 1rem;
+$spacing-18: 1.125rem;
+$spacing-20: 1.25rem;
+$spacing-24: 1.5rem;
+$spacing-28: 1.75rem;
+$spacing-32: 2rem;
+$spacing-43: 2.688rem;
+$spacing-48: 3rem;
+
+// border-radius
+$border-radius-4: 0.25rem;
+$border-radius-8: 0.5rem;
+$border-radius-16: 1rem;
+$border-radius-24: 1.5rem;
+$border-radius-32: 2rem;
+$border-radius-48: 3rem;
