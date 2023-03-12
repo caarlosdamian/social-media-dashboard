@@ -8,7 +8,7 @@ $instagram: linear gradient hsl(37, 97%, 70%) to hsl(329, 70%, 58%);
 $youTube: hsl(348, 97%, 39%);
 
 // Generic
-$very-dark-blue: hsl(230, 17%, 14%); //(Text)
+$very-dark-blue: hsl(230, 17%, 14%); //(Text) #1d1f29
 
 // #### Dark Theme
 
@@ -16,20 +16,20 @@ $toggle-dark: linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%);
 
 // #### Light Theme
 
-$toggle-light: hsl(230, 22%, 74%);
+$toggle-light:#848bab;
 
 // #### Dark Theme
-$very-dark-lue-top: hsl(232, 19%, 15%);
+$very-dark-lue-top: #20222f;
 $dark-desaturated-blue: hsl(228, 28%, 20%); //(Card BG)
-$desaturated-blue: hsl(228, 34%, 66%); // (Text)
+$desaturated-blue: #8c98c6; // (Text)
 
 // #### Light Theme
 
 $very-pale-blue: hsl(225, 100%, 98%); //(Top BG Pattern)
 $light-grayish-blue: hsl(227, 47%, 96%); // (Card BG)
-$dark-grayish-blue: hsl(228, 12%, 44%); //(Text)
+$dark-grayish-blue: hsl(228, 12%, 44%); //(Text) #63687D
 
-$font-family: 'Inter', sans-serif;
+$font-family: "Inter", sans-serif;
 $font-style: normal;
 
 $font-weight-700: 700;
@@ -79,12 +79,14 @@ $padding-spaicing-56: 2.5rem;
 $padding-spaicing-48: 3rem;
 $padding-spaicing-42: 2.625rem;
 $padding-spaicing-40: 2.5rem;
+$padding-spaicing-36: 2.25rem;
 $padding-spaicing-32: 2rem;
 $padding-spaicing-28: 1.75rem;
 $padding-spaicing-24: 1.5rem;
 $padding-spaicing-20: 1.25rem;
 $padding-spaicing-18: 1.125rem;
 $padding-spaicing-16: 1rem;
+$padding-spaicing-4: 0.25rem;
 
 // spacing
 $spacing-4: 0.25rem;
@@ -103,6 +105,7 @@ $spacing-48: 3rem;
 // border-radius
 $border-radius-4: 0.25rem;
 $border-radius-8: 0.5rem;
+$border-radius-12: 0.75rem;
 $border-radius-16: 1rem;
 $border-radius-24: 1.5rem;
 $border-radius-32: 2rem;

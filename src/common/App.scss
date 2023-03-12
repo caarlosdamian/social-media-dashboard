@@ -10,6 +10,7 @@
   padding: 0;
   font-family: $font-family;
   font-style: $font-style;
+  transition: 0.5s all ease-in-out;
 }
 body {
   line-height: 1.5;
@@ -41,4 +42,113 @@ h6 {
 #root,
 #__next {
   isolation: isolate;
+}
+
+.app {
+  .wrapper {
+    // padding: 36px 24px 45px;
+
+    .top {
+      height: 235px;
+      background: $very-pale-blue;
+      padding: $padding-spaicing-36 $padding-spaicing-24 $padding-spaicing-24
+        $padding-spaicing-24;
+      border-radius: 0px 0px 20px 20px;
+
+      &.dark {
+        background: $very-dark-lue-top;
+      }
+      .header {
+        display: flex;
+        flex-direction: column;
+        gap: $spacing-16;
+        .right {
+          display: flex;
+          align-items: flex-start;
+          justify-content: flex-start;
+          flex-direction: column;
+          gap: $spacing-4;
+          &-header {
+            @include font-style(
+              $font-size-24,
+              $font-weight-700,
+              $line-height-28
+            );
+            color: $very-dark-blue;
+            &.dark {
+              color: $white;
+            }
+          }
+          &-desc {
+            @include font-style(
+              $font-size-14,
+              $font-weight-700,
+              $line-height-18
+            );
+            color: $dark-grayish-blue;
+            &.dark {
+              color: $desaturated-blue;
+            }
+          }
+        }
+        .middle {
+          background: $toggle-light;
+          height: 1px;
+          width: 100%;
+          margin-top: $spacing-8;
+          // display none destktop
+          &.dark {
+            background: #333a55;
+          }
+        }
+        .left {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          &-header {
+            @include font-style(
+              $font-size-14,
+              $font-weight-700,
+              $line-height-18
+            );
+            color: $dark-grayish-blue;
+            &.dark {
+              color: $desaturated-blue;
+            }
+          }
+          &-toggle {
+            background: #aeb3cb;
+            border-radius: $border-radius-12;
+            height: 24px;
+            width: 48px;
+            padding: $padding-spaicing-4;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            cursor: pointer;
+
+            &.dark {
+              background: linear-gradient(225deg, #40db82 0%, #388fe7 98.02%);
+            }
+
+            &-circle {
+              background: #f1f3fa;
+              height: 18px;
+              width: 18px;
+              border-radius: 50%;
+
+              &.dark {
+                transform: translateX(-120%);
+                background: #252b42;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .bottom {
+      padding: 938px 24px 45px 24px;
+    }
+  }
 }

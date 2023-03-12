@@ -9,7 +9,7 @@ type Props = {
   children: string | JSX.Element | JSX.Element[];
 };
 
-const ThemeContext = createContext<ThemeContextType | null>(null);
+export const ThemeContext = createContext<ThemeContextType | null>(null);
 
 export const ThemeProvider = ({ children }: Props) => {
   const [dark, setDark] = React.useState<boolean>(false);
