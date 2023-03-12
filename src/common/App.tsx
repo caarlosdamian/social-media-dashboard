@@ -2,7 +2,7 @@ import { useDarkMode } from "../hooks/useDarkMode";
 import "./App.scss";
 
 function App() {
-  // @ts-ignore
+  
   const { dark, setDark } = useDarkMode();
 
   return (
