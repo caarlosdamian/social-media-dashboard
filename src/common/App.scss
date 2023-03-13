@@ -46,8 +46,9 @@ h6 {
 
 .app {
   .wrapper {
-    // padding: 36px 24px 45px;
-
+    &.dark {
+      background: #1d1f29;
+    }
     .top {
       height: 235px;
       background: $very-pale-blue;
@@ -147,8 +148,126 @@ h6 {
       }
     }
 
+    .top-cards {
+      position: absolute;
+      top: 191px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 24px;
+
+      .card {
+        width: 326px;
+        background: #f1f3fa;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+
+        &.dark {
+          background: #252b42;
+        }
+        &-top {
+          height: 4px;
+          border-top-right-radius: 5px;
+          border-top-left-radius: 5px;
+        }
+        &-bottom {
+          padding: 32px 90px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          gap: 24px;
+          .card-title {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            &-img {
+              height: 20px;
+              width: 20px;
+              object-fit: cover;
+            }
+            &-header {
+              @include font-style(
+                $font-size-12,
+                $font-weight-700,
+                $line-height-15
+              );
+              color: #63687d;
+              &.dark {
+                color: #8c98c6;
+              }
+            }
+          }
+          .card-heading {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 8px;
+
+            &-header {
+              @include font-style(
+                $font-size-56,
+                $font-weight-700,
+                $line-height-48
+              );
+              text-align: center;
+              letter-spacing: -2px;
+              color: #1d1f29;
+              &.dark {
+                color: #ffffff;
+              }
+            }
+            &-subtitle {
+              @include font-style(
+                $font-size-12,
+                $font-weight-400,
+                $line-height-15
+              );
+              text-align: center;
+              letter-spacing: 5px;
+              text-transform: uppercase;
+              color: #63687d;
+              &.dark {
+                color: #8c98c6;
+              }
+            }
+          }
+          .card-desc {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2px;
+            &-img {
+              object-fit: cover;
+              margin-right: 4px;
+            }
+            &-title,
+            &-subtitle {
+              @include font-style(
+                $font-size-12,
+                $font-weight-700,
+                $line-height-15
+              );
+            }
+          }
+        }
+      }
+    }
+
     .bottom {
       padding: 938px 24px 45px 24px;
+      height: 2000px;
+
+      &.dark {
+        background: #1d1f29;
+      }
     }
   }
 }

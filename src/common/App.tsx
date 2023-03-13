@@ -1,13 +1,14 @@
+import { PrimaryCard } from "../components/primaryCard/PrimaryCard";
 import { useDarkMode } from "../hooks/useDarkMode";
+import { followersData } from "../utils/data";
 import "./App.scss";
 
 function App() {
-  
   const { dark, setDark } = useDarkMode();
 
   return (
     <main className="app">
-      <div className="wrapper">
+      <div className={`wrapper ${dark}`}>
         <section className={`top ${dark}`}>
           <header className="header">
             <div className="right">
@@ -25,9 +26,13 @@ function App() {
               </div>
             </div>
           </header>
-          <div className="top-cards"></div>
+          <div className="top-cards">
+            {followersData.map((item) => (
+              <PrimaryCard key={item.id} item={item} />
+            ))}
+          </div>
         </section>
-        <section className="bottom">Bottom</section>
+        <section className={`bottom ${dark}`}>Bottom</section>
       </div>
     </main>
   );

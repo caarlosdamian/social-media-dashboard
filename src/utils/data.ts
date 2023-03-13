@@ -1,6 +1,7 @@
 import { facebook, instagram, twitter, youtube } from "../assets";
+import { FollowerInfo } from "../common/types";
 
-export const followersData = [
+export const followersData: FollowerInfo[] = [
   {
     id: 1,
     username: "@nathanf",
@@ -8,6 +9,7 @@ export const followersData = [
     todayAmount: "12",
     icon: facebook,
     up: true,
+    color: "#178FF5",
   },
   {
     id: 2,
@@ -16,6 +18,7 @@ export const followersData = [
     todayAmount: "99",
     icon: twitter,
     up: true,
+    color: "#1DA1F2",
   },
   {
     id: 3,
@@ -24,6 +27,7 @@ export const followersData = [
     todayAmount: "1099",
     icon: instagram,
     up: true,
+    color: "linear-gradient(225deg, #DF4896 0%, #EE877E 50.91%, #FDC366 100%)",
   },
   {
     id: 4,
@@ -32,5 +36,6 @@ export const followersData = [
     todayAmount: "144",
     icon: youtube,
     up: false,
+    color: "#C4032B",
   },
 ];
