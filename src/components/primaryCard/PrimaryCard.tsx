@@ -7,7 +7,6 @@ import { useDarkMode } from "../../hooks/useDarkMode";
 interface props {
   item: FollowerInfo;
 }
-
 export const PrimaryCard = ({ item }: props) => {
   const { color, todayAmount, icon, totalAmount, username, up } = item;
   const { dark } = useDarkMode();
