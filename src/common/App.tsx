@@ -1,6 +1,7 @@
 import { PrimaryCard } from "../components/primaryCard/PrimaryCard";
+import { SecondCard } from "../components/secondCard/SecondCard";
 import { useDarkMode } from "../hooks/useDarkMode";
-import { followersData } from "../utils/data";
+import { followersData, statsInfo } from "../utils/data";
 import "./App.scss";
 
 function App() {
@@ -32,7 +33,16 @@ function App() {
             ))}
           </div>
         </section>
-        <section className={`bottom ${dark}`}>Bottom</section>
+        <section className={`bottom ${dark}`}>
+          <h1 className={`bottom-header ${dark}`}>Overview - Today</h1>
+          <div className="bottom-wrapper">
+            {
+              statsInfo.map((item)=>(
+                <SecondCard item={item}/>
+              ))
+            }
+          </div>
+        </section>
       </div>
     </main>
   );

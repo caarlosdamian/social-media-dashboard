@@ -1,8 +1,8 @@
 import React from "react";
 import { FollowerInfo } from "../../common/types";
 import { Slide } from "react-awesome-reveal";
-import { down, up as arrowUp } from "../../assets";
 import { useDarkMode } from "../../hooks/useDarkMode";
+import { StatIndicator } from "../statIndicator/StatIndicator";
 
 interface props {
   item: FollowerInfo;
@@ -23,18 +23,7 @@ export const PrimaryCard = ({ item }: props) => {
             <p className={`card-heading-header ${dark}`}>{totalAmount}</p>
             <p className={`card-heading-subtitle ${dark}`}>Followers</p>
           </div>
-          <div
-            className="card-desc"
-            style={{ color: up ? "#1EB589" : "#DC414C" }}
-          >
-            <img
-              src={up ? arrowUp : down}
-              alt="down"
-              className="card-desc-img"
-            />
-            <span className="card-desc-title">{todayAmount}</span>
-            <span className="card-desc-subtitle">Today</span>
-          </div>
+          <StatIndicator isUp={up} todayAmount={todayAmount} label={'Today'} />
         </div>
       </div>
     </Slide>

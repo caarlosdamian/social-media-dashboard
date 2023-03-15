@@ -1,5 +1,5 @@
 import { facebook, instagram, twitter, youtube } from "../assets";
-import { FollowerInfo } from "../common/types";
+import { FollowerInfo, StatsInfo } from "../common/types";
 
 export const followersData: FollowerInfo[] = [
   {
@@ -37,5 +37,72 @@ export const followersData: FollowerInfo[] = [
     icon: youtube,
     up: false,
     color: "#C4032B",
+  },
+];
+
+export const statsInfo: StatsInfo[] = [
+  {
+    id: 5,
+    header: "Page Views",
+    totalAmount: "87",
+    todayAmount: "3",
+    icon: facebook,
+    up: true,
+  },
+  {
+    id: 6,
+    header: "Likes",
+    totalAmount: "52",
+    todayAmount: "2",
+    icon: facebook,
+    up: false,
+  },
+  {
+    id: 7,
+    header: "Likes",
+    totalAmount: "5462",
+    todayAmount: "2257",
+    icon: instagram,
+    up: true,
+  },
+  {
+    id: 8,
+    header: "Profile Views",
+    totalAmount: "52k",
+    todayAmount: "1375",
+    icon: instagram,
+    up: true,
+  },
+  {
+    id: 9,
+    header: "Retweets",
+    totalAmount: "117",
+    todayAmount: "303",
+    icon: twitter,
+    up: true,
+  },
+  {
+    id: 10,
+    header: "Likes",
+    totalAmount: "507",
+    todayAmount: "553",
+    icon: twitter,
+    up: true,
+  },
+  {
+    id: 11,
+    header: "Likes",
+    totalAmount: "107",
+    todayAmount: "19",
+    icon: youtube,
+    up: false,
+  },
+  {
+    id: 12,
+    header: "Total Views",
+    totalAmount: "1407",
+    todayAmount: "12",
+    icon: youtube,
+    up: false,
   },
 ];
