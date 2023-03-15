@@ -46,6 +46,10 @@ h6 {
 
 .app {
   .wrapper {
+    @include for-size("desktop-up") {
+      display: flex;
+      flex-direction: column;
+    }
     &.dark {
       background: #1d1f29;
     }
@@ -55,6 +59,14 @@ h6 {
       padding: $padding-spaicing-36 $padding-spaicing-24 $padding-spaicing-24
         $padding-spaicing-24;
       border-radius: 0px 0px 20px 20px;
+      @include for-size("desktop-up") {
+        height: 244px;
+        padding: $padding-spaicing-36 162px $padding-spaicing-24;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+      }
 
       &.dark {
         background: $very-dark-lue-top;
@@ -63,12 +75,21 @@ h6 {
         display: flex;
         flex-direction: column;
         gap: $spacing-16;
+
+        @include for-size("desktop-up") {
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+
+          width: 1113px;
+        }
         .right {
           display: flex;
           align-items: flex-start;
           justify-content: flex-start;
           flex-direction: column;
           gap: $spacing-4;
+
           &-header {
             @include font-style(
               $font-size-24,
@@ -76,6 +97,13 @@ h6 {
               $line-height-28
             );
             color: $very-dark-blue;
+            @include for-size("desktop-up") {
+              @include font-style(
+                $font-size-28,
+                $font-weight-700,
+                $line-height-36
+              );
+            }
             &.dark {
               color: $white;
             }
@@ -97,15 +125,22 @@ h6 {
           height: 1px;
           width: 100%;
           margin-top: $spacing-8;
-          // display none destktop
+
           &.dark {
             background: #333a55;
+          }
+
+          @include for-size("desktop-up") {
+            display: none;
           }
         }
         .left {
           display: flex;
           justify-content: space-between;
           align-items: center;
+          @include for-size("desktop-up") {
+            gap: 13px;
+          }
           &-header {
             @include font-style(
               $font-size-14,
@@ -128,8 +163,8 @@ h6 {
             justify-content: flex-end;
             cursor: pointer;
 
-            &:hover{
-              background: linear-gradient(225deg, #40DB82 0%, #388FE7 98.02%);
+            &:hover {
+              background: linear-gradient(225deg, #40db82 0%, #388fe7 98.02%);
             }
             &.dark {
               background: linear-gradient(225deg, #40db82 0%, #388fe7 98.02%);
@@ -163,6 +198,13 @@ h6 {
       flex-direction: column;
       gap: 24px;
 
+      @include for-size("desktop-up") {
+        flex-direction: row;
+        gap: 30px;
+        top: 139px;
+        padding: 0 165px;
+      }
+
       .card {
         width: 326px;
         background: #f1f3fa;
@@ -170,8 +212,13 @@ h6 {
         display: flex;
         flex-direction: column;
         cursor: pointer;
+
+        @include for-size("desktop-up") {
+          width: 255px;
+        }
+
         &:hover {
-          background: #E1E4F0;
+          background: #e1e4f0;
           &.dark {
             background: #333a55;
           }
@@ -192,6 +239,18 @@ h6 {
           justify-content: center;
           flex-direction: column;
           gap: 24px;
+          @include for-size("desktop-up") {
+            padding: 32px 58px;
+          }
+
+          @include for-size("desktop-up") {
+            // height: 244px;
+            // padding: $padding-spaicing-36 162px $padding-spaicing-24;
+            // display: flex;
+            // align-items: center;
+            // justify-content: space-between;
+            // flex-direction: column;
+          }
           .card-title {
             display: flex;
             align-items: center;
@@ -262,6 +321,12 @@ h6 {
       flex-direction: column;
       gap: 28px;
 
+      @include for-size("desktop-up") {
+        padding: 152px 165px 75px;
+        width: 1440px;
+        align-self: center;
+      }
+
       &-header {
         @include font-style($font-size-24, $font-weight-700, $line-height-28);
         color: #63687d;
@@ -277,6 +342,12 @@ h6 {
         justify-content: center;
         flex-direction: column;
         gap: 16px;
+
+        @include for-size("desktop-up") {
+          flex-direction: row;
+          flex-wrap: wrap;
+          gap: 30px;
+        }
         .stat-card {
           background: #f1f3fa;
           border-radius: 5px;
@@ -288,8 +359,13 @@ h6 {
           cursor: pointer;
           gap: 24px;
 
+          @include for-size("desktop-up") {
+            min-width: 255px;
+            gap: 20px;
+          }
+
           &:hover {
-            background: #E1E4F0;
+            background: #e1e4f0;
             &.dark {
               background: #333a55;
             }
